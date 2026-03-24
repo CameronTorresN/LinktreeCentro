@@ -1,0 +1,15 @@
+{
+  "name": "html-css",
+  "version": "1.0.0",
+  "description": "HTML/CSS",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve"
+  },
+  "keywords": ["html", "css"],
+  "author": "Cameron Torres",
+  "license": "Centro",
+  "devDependencies": {
+    "serve": "11.2.0"
+  }
+}
