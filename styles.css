@@ -390,3 +390,110 @@ body::after {
   background: linear-gradient(90deg, var(--orange), var(--sky), var(--black));
   margin-top: auto;
 }
+
+/* ── DESKTOP ENHANCEMENT ── */
+@media (min-width: 900px) {
+  body {
+    display: grid;
+    grid-template-columns: minmax(360px, 480px) minmax(420px, 560px);
+    justify-content: center;
+    align-items: start;
+    column-gap: 56px;
+    row-gap: 0;
+    padding: 40px 32px 0;
+  }
+
+  .hero {
+    max-width: 480px;
+    width: 100%;
+    height: calc(100vh - 84px);
+    max-height: 760px;
+    min-height: 620px;
+    border-radius: 6px;
+    position: sticky;
+    top: 40px;
+  }
+
+  .hero-fade {
+    height: 180px;
+  }
+
+  .container {
+    max-width: 560px;
+    width: 100%;
+    min-height: calc(100vh - 84px);
+    padding: 6px 0 56px;
+    align-items: flex-start;
+  }
+
+  .identity {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+
+  .name {
+    font-size: clamp(60px, 7vw, 88px);
+    letter-spacing: -1.5px;
+  }
+
+  .bio {
+    margin-top: 12px;
+    max-width: 520px;
+    font-size: 12px;
+  }
+
+  .socials {
+    width: 100%;
+    justify-content: flex-start;
+    margin: 24px 0 30px;
+  }
+
+  .rule {
+    margin-bottom: 30px;
+  }
+
+  .section-label {
+    margin-bottom: 12px;
+  }
+
+  .links {
+    gap: 11px;
+    margin-bottom: 22px;
+  }
+
+  .link-item {
+    padding: 18px 22px;
+    font-size: 12px;
+  }
+
+  .footer {
+    width: 100%;
+    text-align: left;
+    margin-top: 44px;
+    padding-bottom: 12px;
+  }
+
+  .bottom-bar {
+    grid-column: 1 / -1;
+    margin-top: 8px;
+  }
+}
+
+/* ── LARGE DESKTOP POLISH ── */
+@media (min-width: 1280px) {
+  body {
+    grid-template-columns: 440px 580px;
+    column-gap: 72px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+
+  .hero {
+    max-height: 800px;
+  }
+
+  .name {
+    font-size: 92px;
+  }
+}
